@@ -8,7 +8,7 @@ contract FEU {
     "FEU Token";
     string public tokenSymbol=
     "FEU";
-    uint totalSupply = 0;
+    uint totalSupply = 0; public
 
     mapping(address => uint)
     public balances;
@@ -16,14 +16,14 @@ contract FEU {
     function mint(address _address,uint _amount) public
      {
         totalSupply +=_amount;
-        balances[_address] +=
-        _amount;
-        
+        balances[_address] += _amount;
+         
     }
     function burn(address _address,uint _amount)public
-     {
+       if (balances[_address] >= _amount) {
         totalSupply -= _amount;
         balances[_address] -= 
         _amount;
+       }
     }
 }
