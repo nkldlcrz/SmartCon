@@ -1,4 +1,4 @@
-# Smart Conract 
+# Smart Contract
 
 The Feu token was designed to represent the concepts gained through this course. This will be an initial token example in which we will use the 
 Cryptography basic concepts, blockchain, and solidity.
