@@ -2,12 +2,12 @@
 // SPDX-License-Identifier: MIT 
 pragma solidity 0.8.18; 
 
-contract FEU {
+contract Artify {
     
     string public tokenName =
-    "FEU Token";
+    "Artify Token";
     string public tokenSymbol=
-    "FEU";
+    "Artify";
     uint totalSupply = 0; public
 
     mapping(address => uint)
